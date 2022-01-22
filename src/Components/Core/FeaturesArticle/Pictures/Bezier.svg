@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 237">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #ed1c24;
+      }
+
+      .cls-2 {
+        fill: #c1272d;
+      }
+
+      .cls-3 {
+        stroke: #c1272d;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: blue;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: blue;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-6, .cls-7 {
+        stroke: #000;
+      }
+
+      .cls-7 {
+        stroke-width: 0.25px;
+      }
+    </style>
+  </defs>
+  <g id="Ebene_2" data-name="Ebene 2">
+    <g id="Ebene_1-2" data-name="Ebene 1">
+      <g>
+        <circle class="cls-1" cx="7" cy="230" r="6.5"/>
+        <path class="cls-2" d="M7,224a6,6,0,1,1-6,6,6.0068,6.0068,0,0,1,6-6m0-1a7,7,0,1,0,7,7,7,7,0,0,0-7-7Z"/>
+      </g>
+      <g>
+        <circle class="cls-1" cx="233" cy="230" r="6.5"/>
+        <path class="cls-2" d="M233,224a6,6,0,1,1-6,6,6.0068,6.0068,0,0,1,6-6m0-1a7,7,0,1,0,7,7,7,7,0,0,0-7-7Z"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M122,13.5A6.5,6.5,0,1,1,128.5,7,6.45438,6.45438,0,0,1,122,13.5Z"/>
+        <path class="cls-2" d="M122,1a6.00045,6.00045,0,1,1-6,6,6.0068,6.0068,0,0,1,6-6m0-1a7,7,0,1,0,7,7,7,7,0,0,0-7-7Z"/>
+      </g>
+      <line class="cls-3" x1="10.71344" y1="224.07379" x2="117.94116" y2="12.70382"/>
+      <line class="cls-3" x1="125.9899" y1="12.51981" x2="228.9899" y2="224.51981"/>
+      <circle class="cls-4" cx="59" cy="128" r="2.5"/>
+      <circle class="cls-4" cx="173" cy="109" r="2.5"/>
+      <line class="cls-5" x1="61.5" y1="127.5" x2="170.5" y2="109.5"/>
+      <path class="cls-6" d="M7,230C68.5,122.5,115.5,118.5,115.5,118.5"/>
+      <circle class="cls-6" cx="115.5" cy="118.5" r="3"/>
+      <line class="cls-7" x1="14.5" y1="215.5" x2="136.5" y2="33.5"/>
+      <line class="cls-7" x1="32.17623" y1="181.76579" x2="151.59941" y2="65.23065"/>
+      <line class="cls-7" x1="46.53091" y1="153.4695" x2="162.94104" y2="88.57457"/>
+    </g>
+  </g>
+</svg>

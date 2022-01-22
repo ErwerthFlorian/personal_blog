@@ -1,0 +1,9 @@
+.image {
+  background-size: 71%;
+  background-repeat: repeat !important;
+  background-position-x: 52% !important;
+  background-position-y: 60% !important;
+  -webkit-filter: blur(2px) !important;
+          filter: blur(2px) !important;
+}
+/*# sourceMappingURL=ReactEntry1Style.css.map */

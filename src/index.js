@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap';
+import 'jquery/dist/jquery';
+var app = document.createElement('div');
+app.style.height = '100vh';
+app.style.width = '100vw';
+app.style.backgroundColor = 'black';
+app.style.overflowX = 'hidden';
+document.body.appendChild(app);
+ReactDOM.render(<App />, app);

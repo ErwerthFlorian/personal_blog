@@ -1,0 +1,77 @@
+fade-in-1 {
+  -webkit-animation: fade-in-animation ease 1s !important;
+          animation: fade-in-animation ease 1s !important;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+fade-in-1p5 {
+  -webkit-animation: fade-in-animation ease 1.5s !important;
+          animation: fade-in-animation ease 1.5s !important;
+}
+
+fade-in-2 {
+  -webkit-animation: fade-in-animation ease 2s !important;
+          animation: fade-in-animation ease 2s !important;
+}
+
+@-webkit-keyframes fade-in-animation {
+  from {
+    -webkit-filter: opacity(0) !important;
+            filter: opacity(0) !important;
+  }
+  to {
+    -webkit-filter: opacity(1) !important;
+            filter: opacity(1) !important;
+  }
+}
+
+@keyframes fade-in-animation {
+  from {
+    -webkit-filter: opacity(0) !important;
+            filter: opacity(0) !important;
+  }
+  to {
+    -webkit-filter: opacity(1) !important;
+            filter: opacity(1) !important;
+  }
+}
+
+#learn-react {
+  color: black;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  #learn-react {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+}
+
+@media (max-width: 768px) {
+  #learn-react {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+#learn-react ~ p {
+  width: 100%;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+#card-img {
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#card-img:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+/*# sourceMappingURL=MainPageStyle.css.map */

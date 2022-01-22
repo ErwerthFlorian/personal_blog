@@ -1,0 +1,18 @@
+.entries-container {
+	width: 88vw;
+	overflow: auto;
+	margin: auto;
+	justify-content: left;
+	display: grid;
+	grid-template-columns: auto auto auto;
+
+	@media (max-width: 998px) {
+		grid-template-columns: auto;
+	}
+	@media (min-width: 998px) and (max-width: 1200px) {
+		grid-template-columns: auto auto;
+	}
+
+	justify-content: center;
+	grid-gap: 25px 25px;
+}

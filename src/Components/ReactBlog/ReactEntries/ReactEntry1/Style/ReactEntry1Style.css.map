@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACN,eAAe,EAAE,GAAG;EACpB,iBAAiB,EAAE,iBAAiB;EACpC,qBAAqB,EAAE,cAAc;EACrC,qBAAqB,EAAE,cAAc;EACrC,MAAM,EAAE,SAAS,CAAC,UAAU;CAC5B",
+    "sources": [
+        "ReactEntry1Style.scss"
+    ],
+    "names": [],
+    "file": "ReactEntry1Style.css"
+}

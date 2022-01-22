@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAOnB,KAAK,EAAE,GAAG;EACV,WAAW,EAAE,EAAE;EACf,gBAAgB,EAAE,KAAK;EACvB,OAAO,EAAE,EAAE;EACX,aAAa,EAAE,IAAI;CACnB;;AAXA,MAAM,EAAE,SAAS,EAAE,MAAM;EAD1B,AAAA,mBAAmB,CAAC;IAElB,UAAU,EAAE,GAAG;GAUhB;;;AARA,MAAM,EAAE,SAAS,EAAE,MAAM;EAJ1B,AAAA,mBAAmB,CAAC;IAKlB,UAAU,EAAE,EAAE;GAOf",
+    "sources": [
+        "ArticleBackgroundStyle.scss"
+    ],
+    "names": [],
+    "file": "ArticleBackgroundStyle.css"
+}

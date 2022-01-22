@@ -1,0 +1,56 @@
+.button-gradient {
+  width: 100%;
+  height: 50px;
+  background-size: 200% !important;
+  background: -webkit-gradient(linear, left top, right top, from(#000f96), color-stop(25%, #a5f314), color-stop(50%, #3f5efb), color-stop(75%, #fc466b), to(#000f96));
+  background: linear-gradient(90deg, #000f96 0%, #a5f314 25%, #3f5efb 50%, #fc466b 75%, #000f96 100%);
+  -webkit-animation: button-gradient-animation 25s ease-in-out infinite 1s;
+          animation: button-gradient-animation 25s ease-in-out infinite 1s;
+}
+
+.button-gradient-button {
+  border: none;
+  width: 98%;
+  margin-left: 1%;
+  padding-top: 1%;
+  height: 44px;
+  margin-top: 3px;
+  text-decoration: none;
+  background: white;
+  color: black;
+  text-align: center;
+  -webkit-transition: background 250ms ease-in-out, -webkit-transform 150ms;
+  transition: background 250ms ease-in-out, -webkit-transform 150ms;
+  transition: background 250ms ease-in-out, transform 150ms;
+  transition: background 250ms ease-in-out, transform 150ms, -webkit-transform 150ms;
+}
+
+.button-gradient-button:hover {
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@-webkit-keyframes button-gradient-animation {
+  0% {
+    background-position-x: 0%;
+  }
+  50% {
+    background-position-x: 200%;
+  }
+  100% {
+    background-position-x: -150%;
+  }
+}
+
+@keyframes button-gradient-animation {
+  0% {
+    background-position-x: 0%;
+  }
+  50% {
+    background-position-x: 200%;
+  }
+  100% {
+    background-position-x: -150%;
+  }
+}
+/*# sourceMappingURL=AboutMeStyle.css.map */

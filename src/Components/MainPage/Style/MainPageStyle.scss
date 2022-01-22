@@ -1,0 +1,45 @@
+fade-in- {
+	&1 {
+		animation: fade-in-animation ease 1s !important;
+		animation-fill-mode: forwards;
+		animation-iteration-count: 1;
+	}
+	&1p5 {
+		animation: fade-in-animation ease 1.5s !important;
+	}
+	&2 {
+		animation: fade-in-animation ease 2s !important;
+	}
+}
+
+@keyframes fade-in-animation {
+	from {
+		filter: opacity(0) !important;
+	}
+	to {
+		filter: opacity(1) !important;
+	}
+}
+
+#learn-react {
+	@media (min-width: 768px) {
+		transform: translateY(50%);
+	}
+	@media (max-width: 768px) {
+		transform: translateY(100%);
+	}
+	color: black;
+	transition: 1s ease-in-out;
+	& ~ p {
+		width: 100%;
+		transition: 1s ease-in-out;
+	}
+}
+
+#card-img {
+	transition: 0.25s ease-in-out;
+
+	&:hover {
+		transform: scale(1.03);
+	}
+}

@@ -1,0 +1,13 @@
+.article-background {
+	@media (max-width: 1024px) {
+		margin-top: 25%;
+	}
+	@media (min-width: 1024px) {
+		margin-top: 2%;
+	}
+	width: 90%;
+	margin-left: 5%;
+	background-color: white;
+	padding: 2%;
+	border-radius: 10px;
+}

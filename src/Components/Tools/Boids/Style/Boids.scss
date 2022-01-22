@@ -1,0 +1,325 @@
+.canvas {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: white;
+}
+
+.start {
+	background-color: white;
+	position: absolute;
+	visibility: visible;
+	border-radius: 4px;
+	width: 150px;
+	height: 45px;
+	@media (max-width: 992px) {
+		bottom: 12vh;
+	}
+	@media (min-width: 992px) {
+		top: 3vh;
+	}
+	right: 60px;
+	line-height: 38px;
+	text-align: center;
+	z-index: 1;
+	border: 3px solid black;
+	cursor: pointer;
+}
+
+.boids-container {
+	position: relative;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+.closing {
+	animation: close-anim 0.25s forwards;
+}
+
+.opening {
+	animation: open-anim 0.25s forwards;
+}
+
+.btn-rotate-back {
+	animation: btn-rotate-back-anim 0.25s forwards;
+}
+
+.btn-rotate {
+	animation: btn-rotate-anim 0.25s forwards;
+}
+
+@keyframes btn-rotate-anim {
+	from {
+		transform: rotateZ(-180deg);
+	}
+	to {
+		transform: rotateZ(180deg);
+	}
+}
+@keyframes btn-rotate-back-anim {
+	from {
+		transform: rotateZ(180deg);
+	}
+	to {
+		transform: rotateZ(-180deg);
+	}
+}
+@keyframes close-anim {
+	from {
+		left: 0%;
+	}
+	to {
+		left: -100%;
+	}
+}
+@keyframes open-anim {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+
+.settings {
+	&-slider {
+		margin-left: auto;
+		margin-right: 5%;
+		width: 95%;
+		&-container {
+			display: block;
+		}
+		&-caption {
+			width: 95%;
+			font-size: 15px;
+			margin-bottom: 0px;
+
+			color: black;
+		}
+	}
+
+	&-container {
+		background-color: white;
+		position: absolute;
+		@media (max-width: 991px) {
+			padding-top: 10px;
+			width: 100%;
+			height: 100%;
+			overflow-y: auto;
+		}
+		@media (min-width: 991px) {
+			margin-top: 5vh;
+			height: 80vh;
+			width: 75%;
+		}
+		padding-left: 1vw;
+
+		right: 100%;
+		top: 0px;
+		border: black 2px solid;
+	}
+
+	&-toggle {
+		margin-top: auto;
+		margin-bottom: auto;
+
+		background-color: white;
+		margin-right: 5%;
+
+		transform: scale(2.5);
+		&-caption {
+			color: black;
+
+			height: 100%;
+		}
+		&-container {
+			border-radius: 4px;
+			background-color: white;
+			padding-left: 10px;
+			@media (min-width: 768px) {
+				display: inline-flex;
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+			@media (max-width: 768px) {
+				display: block;
+			}
+
+			width: 97%;
+			height: fit-content;
+		}
+
+		&-button {
+			background-color: black;
+			position: absolute;
+			visibility: visible;
+			border-radius: 4px;
+			width: 45px;
+			height: 45px;
+			@media (max-width: 992px) {
+				bottom: 12vh;
+			}
+			@media (min-width: 992px) {
+				top: 3vh;
+			}
+			z-index: 1;
+			right: 20px;
+			border: 3px solid black;
+		}
+	}
+}
+
+.tutorial {
+	height: 80%;
+	width: 94%;
+	margin-left: 3%;
+	background-color: white;
+	display: inline-flex;
+
+	margin-bottom: 2%;
+	border-radius: 3px;
+	outline: black 2px solid;
+	padding: 2%;
+	&-container {
+		position: absolute;
+		width: 100vw;
+		height: 95vh;
+		z-index: 2;
+		background-color: grey;
+	}
+	&-text {
+		width: 100%;
+		padding: 5px;
+		text-align: center;
+		@media screen and (max-width: 768px) {
+			font-size: 13px;
+		}
+		@media (min-width: 768px) and (max-width: 992px) {
+			font-size: 15px;
+		}
+		@media (min-width: 992px) {
+			font-size: 22px;
+		}
+	}
+}
+
+.slider {
+	@media (max-width: 992px) {
+		width: 100%;
+		height: 90%;
+	}
+	@media (min-width: 992px) {
+		width: 100%;
+	}
+	height: 100%;
+}
+
+.left {
+	&-container {
+		width: 10%;
+		display: flex;
+	}
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.right {
+	&-container {
+		width: 10%;
+		display: flex;
+	}
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.close-tutorial {
+	animation: close-tutorial-anim 0.25s forwards;
+}
+
+.open-tutorial {
+	animation: open-tutorial-anim 0.25s forwards;
+}
+
+@keyframes close-tutorial-anim {
+	from {
+		top: 0%;
+	}
+	to {
+		top: 100%;
+	}
+}
+
+@keyframes open-tutorial-anim {
+	from {
+		top: 100%;
+	}
+	to {
+		top: 0%;
+	}
+}
+
+.button {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: white;
+	cursor: pointer;
+	border-radius: 4px;
+	outline: 2px black solid;
+	@media (max-width: 991px) {
+		width: 95%;
+	}
+	@media (min-width: 991px) {
+		width: 50%;
+	}
+
+	&-tutorial {
+		width: 50%;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		background-color: white;
+		cursor: pointer;
+		border-radius: 4px;
+		outline: 2px black solid;
+		justify-content: center;
+
+		&-close {
+			width: 95%;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			background-color: white;
+			border: 2px black solid;
+
+			border-radius: 4px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	&-group {
+		background-color: white;
+		position: relative;
+		margin-bottom: 10px;
+		width: 97%;
+		@media (min-width: 991px) {
+			display: block;
+		}
+		@media (max-width: 991px) {
+			display: inline-flex;
+		}
+	}
+}

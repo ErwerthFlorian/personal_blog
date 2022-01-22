@@ -1,0 +1,35 @@
+.seperator {
+  padding-top: 2px;
+  width: 100% !important;
+  height: 2px !important;
+  border-radius: 6px;
+  background: linear-gradient(45deg, #fc466b 0%, #3f5efb 25%, #a5f314 50%, #3f5efb 75%, #fc466b 100%);
+  background-size: 200% 100%;
+  -webkit-animation: color-seperator-movement 10s both infinite;
+          animation: color-seperator-movement 10s both infinite;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+}
+
+b {
+  color: gray;
+}
+
+@-webkit-keyframes color-seperator-movement {
+  from {
+    background-position-x: 0%;
+  }
+  to {
+    background-position-x: 200%;
+  }
+}
+
+@keyframes color-seperator-movement {
+  from {
+    background-position-x: 0%;
+  }
+  to {
+    background-position-x: 200%;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

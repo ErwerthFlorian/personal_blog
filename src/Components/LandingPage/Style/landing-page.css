@@ -1,0 +1,151 @@
+.landingpage-content {
+  margin: 0;
+  background-size: 200% !important;
+  background-position-x: 50%;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#326432), color-stop(50%, #000f96), color-stop(60%, #a5f314), color-stop(70%, #3f5efb), color-stop(80%, #fc466b), color-stop(90%, #000f96), to(#326432));
+  background: linear-gradient(90deg, #326432 0%, #000f96 50%, #a5f314 60%, #3f5efb 70%, #fc466b 80%, #000f96 90%, #326432 100%);
+  -webkit-animation: background-animation 10s ease-in-out infinite 1s;
+          animation: background-animation 10s ease-in-out infinite 1s;
+}
+
+@-webkit-keyframes background-animation {
+  0% {
+    background-position-x: -10%;
+  }
+  50% {
+    background-position-x: 200%;
+  }
+  100% {
+    background-position-x: -10%;
+  }
+}
+
+@keyframes background-animation {
+  0% {
+    background-position-x: -10%;
+  }
+  50% {
+    background-position-x: 200%;
+  }
+  100% {
+    background-position-x: -10%;
+  }
+}
+
+.background {
+  -webkit-animation: overlay 1s ease-in-out forwards;
+          animation: overlay 1s ease-in-out forwards;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  top: 25vh;
+  left: 50vw;
+  height: 25%;
+  width: 75%;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .background {
+    width: 95%;
+  }
+}
+
+.caption {
+  z-index: 11;
+  height: 100px;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  -webkit-animation: caption 1s ease-in-out forwards;
+          animation: caption 1s ease-in-out forwards;
+}
+
+@media (min-width: 768px) {
+  .caption {
+    font-size: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .caption {
+    font-size: 35px;
+  }
+}
+
+.landing-button {
+  z-index: 11;
+  display: block;
+  text-decoration: none;
+  width: 90%;
+  margin-left: 5%;
+  height: 75px;
+  font-size: 35px;
+  margin-top: 30px;
+  border-radius: 3px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  color: white;
+  top: 50vh;
+  position: absolute;
+  -webkit-animation: button 1s ease-in-out forwards;
+          animation: button 1s ease-in-out forwards;
+}
+
+.landing-button:hover {
+  color: #fc466b;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.landing-button-text {
+  height: 100%;
+  padding-top: 12.5px;
+}
+
+@-webkit-keyframes button {
+  from {
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+  to {
+    -webkit-filter: opacity(1);
+            filter: opacity(1);
+  }
+}
+
+@keyframes button {
+  from {
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+  to {
+    -webkit-filter: opacity(1);
+            filter: opacity(1);
+  }
+}
+
+@-webkit-keyframes caption {
+  from {
+    top: 25%;
+    color: transparent;
+  }
+  to {
+    color: #fc466b;
+    top: 25%;
+  }
+}
+
+@keyframes caption {
+  from {
+    top: 25%;
+    color: transparent;
+  }
+  to {
+    color: #fc466b;
+    top: 25%;
+  }
+}
+/*# sourceMappingURL=landing-page.css.map */

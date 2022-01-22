@@ -1,0 +1,107 @@
+.landingpage-content {
+	margin: 0;
+	background-size: 200% !important;
+	background-position-x: 50%;
+	width: 100vw;
+	height: 100vh;
+
+	background: linear-gradient(
+		90deg,
+		rgb(50, 100, 50) 0%,
+		rgb(0, 15, 150) 50%,
+		rgb(165, 243, 20) 60%,
+		#3f5efb 70%,
+		#fc466b 80%,
+		rgb(0, 15, 150) 90%,
+		rgb(50, 100, 50) 100%
+	);
+
+	animation: background-animation 10s ease-in-out infinite 1s;
+}
+
+@keyframes background-animation {
+	0% {
+		background-position-x: -10%;
+	}
+	50% {
+		background-position-x: 200%;
+	}
+	100% {
+		background-position-x: -10%;
+	}
+}
+
+.background {
+	animation: overlay 1s ease-in-out forwards;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	top: 25vh;
+	left: 50vw;
+	height: 25%;
+	width: 75%;
+	border-radius: 5px;
+	@media (max-width: 992px) {
+		width: 95%;
+	}
+}
+
+.caption {
+	z-index: 11;
+	height: 100px;
+	line-height: 50px;
+	@media (min-width: 768px) {
+		font-size: 75px;
+	}
+	@media (max-width: 768px) {
+		font-size: 35px;
+	}
+	text-align: center;
+	position: relative;
+	animation: caption 1s ease-in-out forwards;
+}
+
+.landing-button {
+	z-index: 11;
+	display: block;
+	text-decoration: none;
+	width: 90%;
+	margin-left: 5%;
+	height: 75px;
+	font-size: 35px;
+	margin-top: 30px;
+	border-radius: 3px;
+	transition: 0.5s ease-in-out;
+	color: white;
+	top: 50vh;
+	position: absolute;
+	animation: button 1s ease-in-out forwards;
+	&:hover {
+		color: #fc466b;
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+	&-text {
+		height: 100%;
+		padding-top: 12.5px;
+	}
+}
+
+@keyframes button {
+	from {
+		filter: opacity(0);
+	}
+	to {
+		filter: opacity(1);
+	}
+}
+
+@keyframes caption {
+	from {
+		top: 25%;
+		color: transparent;
+	}
+	to {
+		color: #fc466b;
+		top: 25%;
+	}
+}

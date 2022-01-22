@@ -1,0 +1,161 @@
+.grid-border {
+  border-top: 4px;
+  border-left: 4px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-color: black;
+  border-style: solid;
+}
+
+.carve-right + ul .right-wall {
+  background-color: gray !important;
+}
+
+.carve-bottom .bottom-wall {
+  background-color: gray !important;
+}
+
+.carve-right-visited + ul .right-wall {
+  background-color: white !important;
+}
+
+.carve-bottom-visited .bottom-wall {
+  background-color: white !important;
+}
+
+.current-legende div ul .cell-background {
+  background-color: gray !important;
+}
+
+.backtracked-legende div ul .cell-background {
+  background-color: white !important;
+}
+
+.neighbors-legende div ul .cell-background {
+  background-color: lightcoral !important;
+}
+
+.neighbor-legende div ul .cell-background {
+  background-color: lightblue !important;
+}
+
+.visited .cell-background {
+  background-color: gray !important;
+}
+
+.backtracked .cell-background {
+  background-color: white !important;
+  -webkit-animation: backtracked-animation 0.1s forwards;
+          animation: backtracked-animation 0.1s forwards;
+}
+
+.neighbors .cell-background {
+  -webkit-animation: neighbors-animation 0.1s forwards;
+          animation: neighbors-animation 0.1s forwards;
+}
+
+.neighbor .cell-background {
+  -webkit-animation: neighbor-animation 0.1s forwards;
+          animation: neighbor-animation 0.1s forwards;
+}
+
+@-webkit-keyframes neighbors-animation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: white;
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: lightcoral;
+  }
+}
+
+@keyframes neighbors-animation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: white;
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: lightcoral;
+  }
+}
+
+@-webkit-keyframes backtracked-animation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes backtracked-animation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes neighbor-animation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-filter: saturate(1.2);
+            filter: saturate(1.2);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: lightblue;
+  }
+}
+
+@keyframes neighbor-animation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-filter: saturate(1.2);
+            filter: saturate(1.2);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: lightblue;
+  }
+}
+/*# sourceMappingURL=labyrinth.css.map */

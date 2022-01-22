@@ -1,0 +1,36 @@
+.pointer {
+	cursor: pointer;
+}
+
+.header-button {
+	text-align: center;
+
+	transition: 0.2s ease-in-out;
+	height: 70px;
+	@media (max-width: 992px) {
+		width: 100%;
+	}
+	@media (min-width: 992px) {
+		width: 100px !important;
+	}
+
+	&:hover {
+		background-color: black;
+
+		& .header-button-text {
+			color: #fc466b;
+		}
+	}
+
+	&-text {
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+		width: 100%;
+		text-decoration: none;
+		color: grey;
+		& div {
+			margin-top: 20px;
+		}
+	}
+}

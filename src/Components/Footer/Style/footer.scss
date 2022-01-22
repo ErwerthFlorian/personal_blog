@@ -1,0 +1,30 @@
+.seperator {
+	padding-top: 2px;
+	width: 100% !important;
+	height: 2px !important;
+	border-radius: 6px;
+	background: linear-gradient(
+		45deg,
+		#fc466b 0%,
+		#3f5efb 25%,
+		rgb(165, 243, 20) 50%,
+		#3f5efb 75%,
+		#fc466b 100%
+	);
+	background-size: 200% 100%;
+	animation: color-seperator-movement 10s both infinite;
+	filter: saturate(0);
+}
+
+b {
+	color: gray;
+}
+
+@keyframes color-seperator-movement {
+	from {
+		background-position-x: 0%;
+	}
+	to {
+		background-position-x: 200%;
+	}
+}
