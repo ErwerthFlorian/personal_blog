@@ -7,6 +7,15 @@
   border-style: solid;
 }
 
+.maze {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .carve-right + ul .right-wall {
   background-color: gray !important;
 }

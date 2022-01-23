@@ -74,23 +74,18 @@ class Labyrinth extends Component {
 					</div>
 					<div className='col'></div>
 				</div>
-
-				<ul
-					id='maze'
-					className=' d-inline-flex justify-content grid-border'
-					style={{
-						listStyle: 'none',
-						padding: 0,
-						transform: `translateX(${
-							this.state.spacingLeft <= 0
-								? window.innerWidth / 2 - this.state.numberOfCells * 34 - 34 / 2
-								: this.state.spacingLeft
-						}px)`,
-						marginRight: 0,
-					}}
-				>
-					{this.cols}
-				</ul>
+				<div className='maze'>
+					<ul
+						id='maze'
+						className=' d-inline-flex justify-content grid-border'
+						style={{
+							listStyle: 'none',
+							padding: 0,
+						}}
+					>
+						{this.cols}
+					</ul>
+				</div>
 
 				<div className='row'>
 					<div className='col'></div>
